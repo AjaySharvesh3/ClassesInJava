@@ -42,12 +42,21 @@ public class Main {
             return newMain;
         }
 
+        //Accessors and Mutators
+    public int getSeats() { return seats; }
+
+    public void setSeats(int seats) { this.seats = seats; }
+
 
     public static void main(String[] args) {
 	// write your code here
         Main main = new Main();
         main.showSum(7.2f, 4.5f, 1);
         System.out.println("I'm Back");
+
+        Main slToNyc = new Main();
+        slToNyc.setSeats(500);
+        System.out.println(slToNyc.getSeats());
 
         Main lax1 = new Main();
         Main lax2 = new Main();
